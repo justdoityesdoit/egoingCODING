@@ -1,0 +1,32 @@
+const myString = "Hello, world!";
+const myRegex = /Hello/; // Regular expression to match the string "Hello"
+const result = myRegex.test(myString); // Returns true if the string contains the pattern
+console.log(result); // true
+
+
+
+const myString = "My favorite number is 7.";
+const myRegex = /\d/; // Regular expression to match any digit
+const result = myRegex.test(myString); // Returns true if the string contains any digit
+console.log(result); // true
+
+
+
+const myString = "The quick brown fox jumps over the lazy dog.";
+const myRegex = /[aeiou]/; // Regular expression to match any vowel
+const result = myRegex.test(myString); // Returns true if the string contains any vowel
+console.log(result); // true
+
+
+
+const myString = "Hello, world!";
+const myRegex = /world/;
+const newString = myString.replace(myRegex, "Universe");
+console.log(newString); // "Hello, Universe!"
+
+
+
+const myString = "The quick brown fox jumps over the lazy dog.";
+const myRegex = /^T/; // Regular expression to match strings that start with "T"
+const result = myRegex.test(myString); // Returns true if the string starts with "T"
+console.log(result); // true
